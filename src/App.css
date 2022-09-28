@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+.hyper-link {
+  text-align: center;
+  font-size: 18px;
+}
+
+.accordion {
+  max-width: 600px;
+  margin: 2rem auto;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+
+.accordion-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+  background-color: rgb(128,128,128,0.4);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.accordion-title,
+.accordion-content {
+  padding: 1rem;
+}
+
+.accordion-content {
+  background-color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: 16px;
+}
+
+.accordion-action {
+  font-weight: bolder;
+}
+
+.add-border {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.application-statuses {
+  display: flex;
+  flex-direction: row;
+}
+
+.application-status {
+  font-size: 14px;
+  /* width: 350px; */
+  /* border-top: 1px solid black;
+  padding-top: 100px; */
+}
+
+.circle-line-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.progress-circle {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #8cc63e;
+}
+
+.current-progress-circle {
+  position: relative;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #8cc63e;
+}
+
+.checkmark {
+  position: absolute;
+  transform: rotate(45deg) translate(-50%, -50%);
+  left: 25%;
+  top: 40%;
+  height: 13px;
+  width: 7px;
+  border-bottom: 3px solid white;
+  border-right: 3px solid white;
+}
+
+.no-progress-circle {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: rgba(128,128,128,0.3);
+}
+
+.line {
+  position: relative;
+  top: -7.5px;
+  width: 200px;
+  border: 1px solid #8cc63e;
+}
+
+.no-line {
+  position: relative;
+  top: -7.5px;
+  width: 200px;
+  border: 1px solid rgb(128,128,128,0.3);
+}
+
+.job-status {
+  font-weight: 600;
+}
+
+
+.current-status {
+  font-weight: 600;
+  color: #8cc63e;
+}
+
+
+.question {
+  font-size: 28px;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.recommended-jobs {
+  background-color: #dfeaf5;
+}
+
+.title {
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.recommended-jobs-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+
+.job-card {
+  padding: 20px;
+  padding-top: 20px;
+  margin-right: 50px;
+  margin-bottom: 40px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.job-title {
+  font-weight: 900;
+  font-size: 18px;
+}
+
+
+.job-details {
+  display: flex;
+  flex-direction: row;
+}
+
+.job-details-specification {
+  padding: 5px 10px;
+  margin-right: 10px;
+  background-color: #21aeca;
+  color: white;
+  font-weight: 600;
+  border-radius: 7px;
+}
+
+.job-actions-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.job-action {
+  padding: 10px 60px;
+  margin-right: 10px;
+  border-radius: 7px;
+  font-weight: 700;
+}
+
+
+.applicant-profile-status {
+  display: flex;
+  flex-direction: row;
+}
+
+.upcoming-events {
+  width: 30%;
+  height: 200px;
+  overflow-y: scroll;
+  border: 1px solid black;
+  border-bottom: none;
+  border-right: none;
+  border-top-left-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .recommended-jobs-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .applicant-profile-status {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .upcoming-events {
+    width: auto;
+    height: auto;
+    overflow-y: hidden;
+    border: none;
+    border-radius: none;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .recommended-jobs-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .upcoming-events {
+    width: 45%;
+  }
+}
