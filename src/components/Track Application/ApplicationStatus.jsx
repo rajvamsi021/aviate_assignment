@@ -8,7 +8,7 @@ const ApplicationStatus = () => {
 
   return (
   <>
-    <div className='container application-statuses py-5'>
+    <div className='container application-statuses py-md-5'>
       {jobStatuses.map((jobStatus, index) => (
         <div className='application-status' key={index}>
           <div className='circle-line-container'>
@@ -26,7 +26,9 @@ const ApplicationStatus = () => {
             )
             }
 
-            <hr className={index!==jobStatuses.length-1 ? (index<applicationIndex ? 'line' : 'no-line') : ''}/>
+            {/* {index!==jobStatuses.length-1 && <hr className={index<applicationIndex ? 'line' : 'no-line'}/>} */}
+
+            <hr className={index!==jobStatuses.length-1 ? (index<applicationIndex ? 'line' : 'no-line') : 'no-hr'}/>
           </div>
           <div className={index===applicationIndex ? 'current-status' : 'job-status'}>{jobStatus}</div>
         </div>
