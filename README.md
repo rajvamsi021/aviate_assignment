@@ -1,4 +1,4 @@
-# growthpal_assignment
+# aviate_assignment
 
 
 ### Installation
